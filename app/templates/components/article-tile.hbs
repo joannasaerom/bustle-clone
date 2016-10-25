@@ -1,8 +1,8 @@
 {{#link-to 'article-detail' article.id}}<div class="well">
   <img src={{article.image}} class="img-responsive">
   {{article.title}}
-  {{article.body}}
+  {{preview article.body}}
   {{article.author}}
-  {{article.timestamp}}
+  {{moment-to-now article.timestamp date}}
 </div>
 {{/link-to}}

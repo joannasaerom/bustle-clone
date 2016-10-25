@@ -1,9 +1,7 @@
 {{#link-to 'article-detail' article.id}}
-<div class="well col-sm-4">
+<div class="col-sm-4">
   <img src={{article.image}} class="img-responsive">
-  {{article.title}}
-  {{article.body}}
-  {{article.author}}
-  {{article.timestamp}}
+  <h4>{{article.title}}</h4>
+  <h5>by {{article.author}}</h5>
 </div>
 {{/link-to}}

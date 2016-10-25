@@ -10,7 +10,7 @@
     {{feature-tile article=article}}
   {{/if}}
 {{/each}}
-<h2>Today's Top News {{moment-format (now) 'MMMM DD, YYYY'}}</h2>
+<h2>Today's Top News {{moment-format (now) 'LL'}}</h2>
 
 {{#each model as |article|}}
   {{#unless article.isClip}}
