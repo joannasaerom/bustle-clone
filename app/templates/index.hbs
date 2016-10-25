@@ -1,4 +1,21 @@
+<div class="row">
+  {{#each model as |article|}}
+    {{#if article.isClip}}
+      {{clip-tile article=article}}
+    {{/if}}
+  {{/each}}
+</div>
 {{#each model as |article|}}
-{{article.title}}
-{{article.body}}
+  {{#if article.isFeatured}}
+    {{feature-tile article=article}}
+  {{/if}}
+{{/each}}
+<h2>Today's Top News {{moment-format (now) 'MMMM DD, YYYY'}}</h2>
+
+{{#each model as |article|}}
+  {{#unless article.isClip}}
+    {{#unless article.isFeatured}}
+      {{article-tile article=article}}
+    {{/unless}}
+  {{/unless}}
 {{/each}}

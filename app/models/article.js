@@ -6,5 +6,6 @@ export default DS.Model.extend({
   body: DS.attr(),
   timestamp: DS.attr(),
   isFeatured: DS.attr(),
+  isClip: DS.attr(),
   image: DS.attr()
 });
