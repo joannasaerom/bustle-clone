@@ -1,3 +1,6 @@
+body{
+  background-color: #F7F7F7;
+}
 .body {
   padding-top: 70px;
 }
@@ -5,4 +8,60 @@
   background-color: white;
   border-radius: 0px;
   border: none;
+}
+.well img{
+  float: left;
+  display: inline;
+  max-width: 50%;
+  margin-right: 10px;
+}
+a {
+  color: black;
+  opacity: 0.9;
+}
+
+a:hover, a:focus, a:active{
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+}
+.emberview a{
+  opacity: 0.5;
+}
+.clipTileText{
+  background-color: white;
+  position: absolute;
+  width: 80%;
+  margin-left: 4%;
+  margin-top: 40%;
+}
+.clipTileText h4, .clipTileText h5, .featureTileText h3, .featureTileText h4{
+  text-align: center;
+}
+.col-sm-4, .featureTile{
+  position: relative;
+  margin-top: 10%;
+}
+.featureImage{
+  margin-top: 10%;
+}
+.featureTileText{
+  background-color: white;
+  position: absolute;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 55%;
+}
+.todayHeader{
+  margin-top: 15%;
+  border: 1px solid black;
+  width: 100%;
+}
+.todayTitle{
+  display: block;
+  text-align: left;
+}
+.currentDate{
+  display:block;
+  text-align: right;
 }

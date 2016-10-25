@@ -1,5 +1,5 @@
 <h1>{{model.title}}</h1>
-<img src={{model.image}}>
+<img src={{model.image}} class="img-responsive">
 <h3>{{model.author}}</h3>
-<h4>{{model.timestamp}}</h4>
+<h4>{{moment-to-now model.timestamp date}}</h4>
 <p>{{model.body}}</p>
